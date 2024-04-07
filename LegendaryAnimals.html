@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <meta charset='utf-8'>
+        <title>Animaux légendaires</title>
+        <link rel="icon" type="image/x-icon" href="./img/logoRed.png">
+        <link rel="stylesheet" href="RDR.css">
+    </head>
+    <body class="legendaire">
+    <script src="./LegendaryAnimals.js"></script>
+        <div class="page">
+
+            <nav> 
+                <div id="logo">
+                    <a href='./MainMenu.html'> <img src="./img/logoBlack.png" alt="logo" height="50"> </a>
+                </div>
+          
+                <div class='dropdown'> 
+                    <svg width="60" height="30">
+                        <rect x="5" y="2" rx="2" ry="2" width="50" height="5" style="fill:black;stroke:black;stroke-width:1;opacity:1.0" />
+                        <rect x="5" y="12" rx="2" ry="2" width="50" height="5" style="fill:black;stroke:black;stroke-width:1;opacity:1.0" />
+                        <rect x="5" y="22" rx="2" ry="2" width="50" height="5" style="fill:black;stroke:black;stroke-width:1;opacity:1.0" />
+                    </svg> 
+                </div>
+                <ul class='menuList'>
+                    <li><a href='./MainMenu.html'> Accueil </a></li>
+                    <li><a href='./GameProgression.html'> Progression </a></li>
+                    <li><a href='./LegendaryAnimals.html'> Animaux légendaires </a></li>
+                    <li><a href='./CharacterSelection.html'> Galerie des personnages </a></li>
+                </ul>
+            </nav> 
+            
+            <div class="main">
+                <div class="legendaryMap">
+                    <img id="map" src="img/legendary/map.png" usemap="#image_map" alt="Carte interactive des animaux">
+                    <img id="notmap" src="img/legendary/map.png" alt="Carte non interactive des animaux">
+                    <map name="image_map">
+                        <area alt="Alligator mâle" title="Alligator mâle" onclick="displayAnimal(1, event);" href="" coords="819,346,882,353,898,331,878,319,831,296,798,289,790,320,803,338" shape="poly">
+                        <area alt="Antilope" title="Antilope" onclick="displayAnimal(2, event);" href="" coords="275,527,259,520,258,537,262,546,261,569,284,580,289,570,322,572,324,551,306,540,314,523,306,498,286,493,275,498" shape="poly">
+                        <area alt="Bison blanc" title="Bison blanc" onclick="displayAnimal(3, event);" href="" coords="442,56,444,62,438,79,443,105,458,120,480,127,510,95,499,64,475,46,455,45" shape="poly">
+                        <area alt="Bison Tatanka" title="Bison Tatanka" onclick="displayAnimal(4, event);" href="" coords="439,424,434,452,437,479,445,502,472,510,486,489,496,466,492,441,460,427" shape="poly">
+                        <area alt="Castor" title="Castor" onclick="displayAnimal(5, event);" href="" coords="838,144,823,157,819,176,823,200,834,213,856,217,878,210,892,188,894,162,863,143" shape="poly">
+                        <area alt="Cerf" title="Cerf" onclick="displayAnimal(6, event);" href="" coords="381,254,397,251,402,245,414,231,401,215,420,202,413,183,367,171,348,186,354,218,361,249" shape="poly">
+                        <area alt="Couguar" title="Couguar" onclick="displayAnimal(7, event);" href="" coords="67,520,92,516,112,520,129,491,122,472,122,460,100,457,78,448,63,479,57,505" shape="poly">
+                        <area alt="Coyote" title="Coyote" onclick="displayAnimal(8, event);" href="" coords="677,296,692,305,708,312,724,298,726,289,738,276,728,263,723,230,703,239,682,226,673,253" shape="poly">
+                        <area alt="Grizzly Bharati" onclick="displayAnimal(9, event);" title="Grizzly Bharati" href="" coords="751,67,742,79,736,99,743,135,762,140,806,130,812,114,807,97,794,65,794,73,775,67" shape="poly">
+                        <area alt="Loup" title="Loup" onclick="displayAnimal(10, event);" href="" coords="585,102,609,126,631,130,661,114,655,83,647,59,635,59,610,57,598,82" shape="poly">
+                        <area alt="Mouflon" title="Mouflon" onclick="displayAnimal(11, event);" href="" coords="502,184,531,205,553,192,571,186,572,168,555,130,539,129,508,127,487,156" shape="poly">
+                        <area alt="Orignal" title="Orignal" onclick="displayAnimal(12, event);" href="" coords="841,70,862,79,889,79,904,51,899,43,917,22,907,2,874,8,827,22,838,52" shape="poly">
+                        <area alt="Panthère Giaguaro" title="Panthère Giaguaro" onclick="displayAnimal(13, event);" href="" coords="790,445,814,441,822,421,806,398,806,375,795,363,775,363,752,373,752,391,742,407,742,429,772,444" shape="poly">
+                        <area alt="Renard" title="Renard" onclick="displayAnimal(14, event);" href="" coords="723,326,729,348,755,357,773,347,792,337,783,314,782,282,761,287,739,279,731,291,731,312" shape="poly">
+                        <area alt="Sanglier" title="Sanglier" onclick="displayAnimal(15, event);" href="" coords="821,277,843,287,867,279,851,245,849,225,819,211,790,218,789,248,799,276" shape="poly">
+                        <area alt="Wapiti" title="Wapiti" onclick="displayAnimal(16, event);" href="" coords="684,115,711,118,720,98,713,81,732,64,713,34,687,47,656,26,643,37,654,65,667,86,669,109" shape="poly">
+                    </map>
+                    
+                    <div class="information" id="infoChoix">
+                        <div class="selector" id="choix">
+                            <select id="choixAnimal" onchange="displayAnimal(this.selectedIndex, event);">
+                              <option disabled selected value> -- Animaux -- </option>
+                              <option>Alligator mâle</option>
+                              <option>Antilope</option>
+                              <option>Bison blanc</option>
+                              <option>Bison Tatanka</option>
+                              <option>Castor</option>
+                              <option>Cerf</option>
+                              <option>Couguar</option>
+                              <option>Coyote</option>
+                              <option>Grizzly Bharati</option>
+                              <option>Loup</option>
+                              <option>Mouflon</option>
+                              <option>Orignal</option>
+                              <option>Panthère Giaguaro</option>
+                              <option>Renard</option>
+                              <option>Sanglier</option>
+                              <option>Wapiti</option>
+                            </select>
+                          </div>
+                        
+                        <div id="nomAnimal">
+                            Cliquez sur un animal pour afficher sa description.
+                        </div>
+                        <img id="currentIcon" src="data:," alt="Icone de l'animal">
+                    </div>
+                </div>
+                
+                <div class="animalDescription">
+                    <img id="currentAnimal" src="data:," alt="Animal légendaire sélectionné">
+                    <div class="animalInfo">
+                        <div id="currentDescription">
+                            Aucun animal n'est sélectionné pour l'instant.
+                        </div>
+                        <img id="animalDrawing" src="data:," alt="Dessin de l'animal légendaire">
+                    </div>
+                </div>
+                
+            </div>
+           
+            <footer>
+                <div class="links">
+                    <ul class='sources'>
+                        <li><h2> Sources </h2></li>
+                        <li><a href='https://reddead.fandom.com/fr/wiki/Animaux_dans_Red_Dead_Redemption_II#Esp%C3%A8ces_l%C3%A9gendaires' target="_blank"> Images des animaux </a></li>
+                        <li><a href='https://reddead.fandom.com/fr/wiki/Animaux_dans_Red_Dead_Redemption_II#Esp%C3%A8ces_l%C3%A9gendaires' target="_blank"> Descriptions des animaux </a></li>
+                        <li><a href='https://www.aicosu-cosplays.com/arthurmorgan' target="_blank"> Dessins du journal d'Arthur </a></li>
+                    </ul>
+                  
+                    <ul class='autre'>
+                        <li><h2> Autres </h2></li>
+                        <li><a href='./CV.html'> Curriculum Vitae </a></li>
+                    </ul>
+                </div>
+                
+                <div class="copyright">
+                    Gloria Benoit - M1BI - Programmation Web - 2024
+                </div>
+            </footer> 
+            
+        </div>
+    </body>
+</html>
