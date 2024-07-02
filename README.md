@@ -4,7 +4,7 @@ Ce site est la production du cours de Programmation web de mon M1 à Université
 
 ## Installation
 
-Aucune installation externe est nécessaire, il suffit de récupérer le répertoire. Il est aussi possible de visualiser le site sans le télécharger, via [GitHack](https://raw.githack.com/gloriabenoit/Projet-Site-Web/main/MainMenu.html).
+Aucune installation externe est nécessaire, il suffit de récupérer le répertoire. Il est aussi possible de visualiser le site sans le télécharger, via [GitHack](https://raw.githack.com/gloriabenoit/Projet-Site-Web/main/MainMenu.html). L'expérience commence par ouverture de `MainMenu.html`.
 
 ## Fonctionnement
 
