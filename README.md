@@ -1,16 +1,19 @@
-# Wiki de Red Dead Redemption II (M1BI - 2024)
-Ce site est la production du cours de Programmation web de mon M1 à Université Paris Cité, organisé par M. Samuel Murail. Ce projet visait à construire un site web, comprenant plusieurs pages, et écrit en
-`HTML5`, mis en page par une feuille de style en cascade `CSS` et dynamique grâce à l’apport du `JavaScript`. Le site a été construit sur `Google Chrome`, il est donc possible d'observer des défauts d'affichage sous d'autres navigateurs.
+# Recreation of Red Dead Redemption II's wiki
+April 2024 (M1 BI)
 
-## Installation
+## Introduction
+The aim of this project was to build a website, comprising several pages, written in `HTML5`, laid out using a `CSS` cascading style sheet and dynamic thanks to the contribution of `JavaScript`. The site was built on `Google Chrome`, so it's possible to observe display errors on other browsers.
 
-Aucune installation externe est nécessaire, il suffit de récupérer le répertoire. Il est aussi possible de visualiser le site sans le télécharger, via [GitHack](https://raw.githack.com/gloriabenoit/Projet-Site-Web/main/MainMenu.html). L'expérience commence par ouverture de `MainMenu.html`.
+## Usage
 
-## Fonctionnement
+Simply open `MainMenu.html` using your favorite search engine.
 
-Le site web est composé de 5 pages web:
-- **Menu Principal** : Page principale du site, elle fait la description du jeu. Plusieurs captures du jeu défilent, et on retrouve des descriptions quant au contexte de chaque page, auxquelles on peut directement accéder.
-- **Page de progression dans le jeu** : La page de progression permet, comme son nom l'indique, de suivre sa progression dans le jeu. Il est ainsi possible de cocher les 116 missions de la quête principale, en prenant compte de la date de début de jeu. A chaque nouvelle mission, le pourcentage de missions effectuées est mis à jour. Une fois toutes les missions accomplies, la date de fin est sauvegardée et la durée totale de jeu est affichée.
-- **Carte des animaux légendaires** : Cette carte interactive renseigne sur la localisation de chacun des 16 animaux légendaires du jeu. Cliquer sur un animal permet d'afficher sa description, sa photo et le dessin qu'Arthur en fait dans son journal. 
-- **Galerie de personnages** : Pour chaque personnage principal du jeu, on observe une description et leur image. La sélection s'effectue via un carousel réactif, dont le cheminement est suivi. 
-- ***Curriculum Vitae*** : Mon *CV* est n'est pas accessible dans la banière, mais est disponible en bas de page, à la requête de mon professeur. 
+## Architecture
+
+The website consists of 5 pages:
+- **Main Menu**: This is the site's main page, describing the game. Several screenshots of the game scroll by, and there are descriptions of the context of each page, which can be accessed directly.
+- **Game progress page** : The progress page allows you to track your progress in the game. You can check off 116 main quest missions, taking into account the start date of the game.
+With each new mission, the percentage of game completion is updated. Once all missions have been completed, the end date is saved and the total playing time is displayed.
+- **Legendary Animal Map**: This interactive map provides information on the location of each of the game's 16 legendary animals. Clicking on an animal displays its description, photo and the drawing Arthur made of it in his diary. 
+- **Character Gallery**: For each of the game's main characters, a description and image are displayed. Selection is made via a reactive carousel, the progress of which is tracked. 
+- ***Curriculum Vitae***: My *CV* is not accessible in the banner, but is available at the bottom of the page, at my teacher's request. 
