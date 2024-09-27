@@ -4,6 +4,18 @@ April 2024 (M1 BI)
 ## Introduction
 The aim of this project was to build a website, comprising several pages, written in `HTML5`, laid out using a `CSS` cascading style sheet and dynamic thanks to the contribution of `JavaScript`. The site was built on `Google Chrome`, so it's possible to observe display errors on other browsers.
 
+## Setup
+
+To install the algorithm and its dependencies, you need to perform the following steps:
+
+### Clone the repository
+
+```bash
+git clone https://github.com/gloriabenoit/Wiki-RDR2.git
+
+cd Wiki-RDR2
+```
+
 ## Usage
 
 Simply open `MainMenu.html` using your favorite search engine.
