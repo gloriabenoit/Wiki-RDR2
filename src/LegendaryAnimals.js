@@ -22,7 +22,7 @@ function displayAnimal(index, event) {
     event.preventDefault();
     // Affichage de l'icon de l'animal
     var icon = document.getElementById("currentIcon");
-    icon.src = "img/legendary/animaux/icon/" + allAnimals[index] + ".png";
+    icon.src = "../img/legendary/animaux/icon/" + allAnimals[index] + ".png";
     icon.style.display = "block";
     
     // Sélection du bon choix
@@ -32,7 +32,7 @@ function displayAnimal(index, event) {
     
     // Affichage de l'image de l'animal
     var animal = document.getElementById("currentAnimal");
-    animal.src = "img/legendary/animaux/" + allAnimals[index] + ".png";
+    animal.src = "../img/legendary/animaux/" + allAnimals[index] + ".png";
     animal.style.display = "block";
     
     // Mise à jour de la description
@@ -40,7 +40,7 @@ function displayAnimal(index, event) {
 
     // Affichage du dessin
     var drawing = document.getElementById("animalDrawing");
-    drawing.src = "img/legendary/animaux/drawing/" + allAnimals[index] + ".png";
+    drawing.src = "../img/legendary/animaux/drawing/" + allAnimals[index] + ".png";
     drawing.style.display = "block";
 
     // Modification visuelle
